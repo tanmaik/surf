@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Shared Tab Groups",
+  "version": "1.0",
+  "permissions": ["tabs", "tabGroups", "storage"],
+  "host_permissions": ["http://localhost:3000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "minimum_chrome_version": "116"
+}

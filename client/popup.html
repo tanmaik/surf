@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shared Tab Groups</title>
+    <style>
+      body {
+        width: 300px;
+        font-family: Arial, sans-serif;
+        padding: 10px;
+      }
+      button {
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px;
+      }
+      input {
+        width: 100%;
+        margin: 5px 0;
+        padding: 5px;
+      }
+      #status {
+        margin-top: 10px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Shared Tab Groups</h2>
+    <button id="createGroup">Create New Group</button>
+    <input type="text" id="groupId" placeholder="Enter group code" />
+    <button id="joinGroup">Join Existing Group</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

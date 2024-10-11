@@ -1,0 +1,34 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Group {
+  id        String     @id @unique @default(cuid())
+  listeners Listener[]
+  tabs      Tab[]
+  updatedAt DateTime   @updatedAt
+}
+
+model Tab {
+  id      String  @id @unique @default(cuid())
+  group   Group?  @relation(fields: [groupId], references: [id])
+  groupId String?
+  url     String  @db.Text
+}
+
+model Listener {
+  id      String  @id
+  group   Group?  @relation(fields: [groupId], references: [id])
+  groupId String?
+}
