@@ -4,4 +4,4 @@ for so long, the browser has been a very single-player application, while every 
 
 while this is a chromium-based extension prototype, this concept could be taken to build a whole new browser that is social-first. 
 
-if you'd like to see this developed further, email [me](mailto:tanmai.kalisipudi@gmail.com).
+if you'd like to see this developed further, email [me at tanmai.kalisipudi@gmail.com](mailto:tanmai.kalisipudi@gmail.com).
